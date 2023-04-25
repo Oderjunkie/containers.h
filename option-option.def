@@ -1,0 +1,647 @@
+#ifndef Option
+  #define Option(T) typeof(_slot64_Option(T))
+  #define _slot64_Option(T) _slot63_Option(T)
+  #define _slot63_Option(T) _slot62_Option(T)
+  #define _slot62_Option(T) _slot61_Option(T)
+  #define _slot61_Option(T) _slot60_Option(T)
+  #define _slot60_Option(T) _slot59_Option(T)
+  #define _slot59_Option(T) _slot58_Option(T)
+  #define _slot58_Option(T) _slot57_Option(T)
+  #define _slot57_Option(T) _slot56_Option(T)
+  #define _slot56_Option(T) _slot55_Option(T)
+  #define _slot55_Option(T) _slot54_Option(T)
+  #define _slot54_Option(T) _slot53_Option(T)
+  #define _slot53_Option(T) _slot52_Option(T)
+  #define _slot52_Option(T) _slot51_Option(T)
+  #define _slot51_Option(T) _slot50_Option(T)
+  #define _slot50_Option(T) _slot49_Option(T)
+  #define _slot49_Option(T) _slot48_Option(T)
+  #define _slot48_Option(T) _slot47_Option(T)
+  #define _slot47_Option(T) _slot46_Option(T)
+  #define _slot46_Option(T) _slot45_Option(T)
+  #define _slot45_Option(T) _slot44_Option(T)
+  #define _slot44_Option(T) _slot43_Option(T)
+  #define _slot43_Option(T) _slot42_Option(T)
+  #define _slot42_Option(T) _slot41_Option(T)
+  #define _slot41_Option(T) _slot40_Option(T)
+  #define _slot40_Option(T) _slot39_Option(T)
+  #define _slot39_Option(T) _slot38_Option(T)
+  #define _slot38_Option(T) _slot37_Option(T)
+  #define _slot37_Option(T) _slot36_Option(T)
+  #define _slot36_Option(T) _slot35_Option(T)
+  #define _slot35_Option(T) _slot34_Option(T)
+  #define _slot34_Option(T) _slot33_Option(T)
+  #define _slot33_Option(T) _slot32_Option(T)
+  #define _slot32_Option(T) _slot31_Option(T)
+  #define _slot31_Option(T) _slot30_Option(T)
+  #define _slot30_Option(T) _slot29_Option(T)
+  #define _slot29_Option(T) _slot28_Option(T)
+  #define _slot28_Option(T) _slot27_Option(T)
+  #define _slot27_Option(T) _slot26_Option(T)
+  #define _slot26_Option(T) _slot25_Option(T)
+  #define _slot25_Option(T) _slot24_Option(T)
+  #define _slot24_Option(T) _slot23_Option(T)
+  #define _slot23_Option(T) _slot22_Option(T)
+  #define _slot22_Option(T) _slot21_Option(T)
+  #define _slot21_Option(T) _slot20_Option(T)
+  #define _slot20_Option(T) _slot19_Option(T)
+  #define _slot19_Option(T) _slot18_Option(T)
+  #define _slot18_Option(T) _slot17_Option(T)
+  #define _slot17_Option(T) _slot16_Option(T)
+  #define _slot16_Option(T) _slot15_Option(T)
+  #define _slot15_Option(T) _slot14_Option(T)
+  #define _slot14_Option(T) _slot13_Option(T)
+  #define _slot13_Option(T) _slot12_Option(T)
+  #define _slot12_Option(T) _slot11_Option(T)
+  #define _slot11_Option(T) _slot10_Option(T)
+  #define _slot10_Option(T) _slot9_Option(T)
+  #define _slot9_Option(T) _slot8_Option(T)
+  #define _slot8_Option(T) _slot7_Option(T)
+  #define _slot7_Option(T) _slot6_Option(T)
+  #define _slot6_Option(T) _slot5_Option(T)
+  #define _slot5_Option(T) _slot4_Option(T)
+  #define _slot4_Option(T) _slot3_Option(T)
+  #define _slot3_Option(T) _slot2_Option(T)
+  #define _slot2_Option(T) _slot1_Option(T)
+  #define _slot1_Option(T) _slot0_Option(T)
+  #define _slot0_Option(T) (struct { int _ : 1; }) {0}
+  #define _slot_Option 1
+#endif
+
+#if _slot_Option == 1
+  typedef T _slot1_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot1_Option_U;
+	#undef _slot1_Option
+  #define _slot1_Option(T) _Generic((T) {0}, _slot1_Option_T: (_slot1_Option_U) {0}, default: _slot0_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 2
+#else
+#if _slot_Option == 2
+  typedef T _slot2_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot2_Option_U;
+	#undef _slot2_Option
+  #define _slot2_Option(T) _Generic((T) {0}, _slot2_Option_T: (_slot2_Option_U) {0}, default: _slot1_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 3
+#else
+#if _slot_Option == 3
+  typedef T _slot3_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot3_Option_U;
+	#undef _slot3_Option
+  #define _slot3_Option(T) _Generic((T) {0}, _slot3_Option_T: (_slot3_Option_U) {0}, default: _slot2_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 4
+#else
+#if _slot_Option == 4
+  typedef T _slot4_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot4_Option_U;
+	#undef _slot4_Option
+  #define _slot4_Option(T) _Generic((T) {0}, _slot4_Option_T: (_slot4_Option_U) {0}, default: _slot3_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 5
+#else
+#if _slot_Option == 5
+  typedef T _slot5_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot5_Option_U;
+	#undef _slot5_Option
+  #define _slot5_Option(T) _Generic((T) {0}, _slot5_Option_T: (_slot5_Option_U) {0}, default: _slot4_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 6
+#else
+#if _slot_Option == 6
+  typedef T _slot6_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot6_Option_U;
+	#undef _slot6_Option
+  #define _slot6_Option(T) _Generic((T) {0}, _slot6_Option_T: (_slot6_Option_U) {0}, default: _slot5_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 7
+#else
+#if _slot_Option == 7
+  typedef T _slot7_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot7_Option_U;
+	#undef _slot7_Option
+  #define _slot7_Option(T) _Generic((T) {0}, _slot7_Option_T: (_slot7_Option_U) {0}, default: _slot6_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 8
+#else
+#if _slot_Option == 8
+  typedef T _slot8_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot8_Option_U;
+	#undef _slot8_Option
+  #define _slot8_Option(T) _Generic((T) {0}, _slot8_Option_T: (_slot8_Option_U) {0}, default: _slot7_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 9
+#else
+#if _slot_Option == 9
+  typedef T _slot9_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot9_Option_U;
+	#undef _slot9_Option
+  #define _slot9_Option(T) _Generic((T) {0}, _slot9_Option_T: (_slot9_Option_U) {0}, default: _slot8_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 10
+#else
+#if _slot_Option == 10
+  typedef T _slot10_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot10_Option_U;
+	#undef _slot10_Option
+  #define _slot10_Option(T) _Generic((T) {0}, _slot10_Option_T: (_slot10_Option_U) {0}, default: _slot9_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 11
+#else
+#if _slot_Option == 11
+  typedef T _slot11_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot11_Option_U;
+	#undef _slot11_Option
+  #define _slot11_Option(T) _Generic((T) {0}, _slot11_Option_T: (_slot11_Option_U) {0}, default: _slot10_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 12
+#else
+#if _slot_Option == 12
+  typedef T _slot12_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot12_Option_U;
+	#undef _slot12_Option
+  #define _slot12_Option(T) _Generic((T) {0}, _slot12_Option_T: (_slot12_Option_U) {0}, default: _slot11_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 13
+#else
+#if _slot_Option == 13
+  typedef T _slot13_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot13_Option_U;
+	#undef _slot13_Option
+  #define _slot13_Option(T) _Generic((T) {0}, _slot13_Option_T: (_slot13_Option_U) {0}, default: _slot12_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 14
+#else
+#if _slot_Option == 14
+  typedef T _slot14_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot14_Option_U;
+	#undef _slot14_Option
+  #define _slot14_Option(T) _Generic((T) {0}, _slot14_Option_T: (_slot14_Option_U) {0}, default: _slot13_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 15
+#else
+#if _slot_Option == 15
+  typedef T _slot15_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot15_Option_U;
+	#undef _slot15_Option
+  #define _slot15_Option(T) _Generic((T) {0}, _slot15_Option_T: (_slot15_Option_U) {0}, default: _slot14_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 16
+#else
+#if _slot_Option == 16
+  typedef T _slot16_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot16_Option_U;
+	#undef _slot16_Option
+  #define _slot16_Option(T) _Generic((T) {0}, _slot16_Option_T: (_slot16_Option_U) {0}, default: _slot15_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 17
+#else
+#if _slot_Option == 17
+  typedef T _slot17_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot17_Option_U;
+	#undef _slot17_Option
+  #define _slot17_Option(T) _Generic((T) {0}, _slot17_Option_T: (_slot17_Option_U) {0}, default: _slot16_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 18
+#else
+#if _slot_Option == 18
+  typedef T _slot18_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot18_Option_U;
+	#undef _slot18_Option
+  #define _slot18_Option(T) _Generic((T) {0}, _slot18_Option_T: (_slot18_Option_U) {0}, default: _slot17_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 19
+#else
+#if _slot_Option == 19
+  typedef T _slot19_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot19_Option_U;
+	#undef _slot19_Option
+  #define _slot19_Option(T) _Generic((T) {0}, _slot19_Option_T: (_slot19_Option_U) {0}, default: _slot18_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 20
+#else
+#if _slot_Option == 20
+  typedef T _slot20_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot20_Option_U;
+	#undef _slot20_Option
+  #define _slot20_Option(T) _Generic((T) {0}, _slot20_Option_T: (_slot20_Option_U) {0}, default: _slot19_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 21
+#else
+#if _slot_Option == 21
+  typedef T _slot21_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot21_Option_U;
+	#undef _slot21_Option
+  #define _slot21_Option(T) _Generic((T) {0}, _slot21_Option_T: (_slot21_Option_U) {0}, default: _slot20_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 22
+#else
+#if _slot_Option == 22
+  typedef T _slot22_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot22_Option_U;
+	#undef _slot22_Option
+  #define _slot22_Option(T) _Generic((T) {0}, _slot22_Option_T: (_slot22_Option_U) {0}, default: _slot21_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 23
+#else
+#if _slot_Option == 23
+  typedef T _slot23_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot23_Option_U;
+	#undef _slot23_Option
+  #define _slot23_Option(T) _Generic((T) {0}, _slot23_Option_T: (_slot23_Option_U) {0}, default: _slot22_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 24
+#else
+#if _slot_Option == 24
+  typedef T _slot24_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot24_Option_U;
+	#undef _slot24_Option
+  #define _slot24_Option(T) _Generic((T) {0}, _slot24_Option_T: (_slot24_Option_U) {0}, default: _slot23_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 25
+#else
+#if _slot_Option == 25
+  typedef T _slot25_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot25_Option_U;
+	#undef _slot25_Option
+  #define _slot25_Option(T) _Generic((T) {0}, _slot25_Option_T: (_slot25_Option_U) {0}, default: _slot24_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 26
+#else
+#if _slot_Option == 26
+  typedef T _slot26_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot26_Option_U;
+	#undef _slot26_Option
+  #define _slot26_Option(T) _Generic((T) {0}, _slot26_Option_T: (_slot26_Option_U) {0}, default: _slot25_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 27
+#else
+#if _slot_Option == 27
+  typedef T _slot27_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot27_Option_U;
+	#undef _slot27_Option
+  #define _slot27_Option(T) _Generic((T) {0}, _slot27_Option_T: (_slot27_Option_U) {0}, default: _slot26_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 28
+#else
+#if _slot_Option == 28
+  typedef T _slot28_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot28_Option_U;
+	#undef _slot28_Option
+  #define _slot28_Option(T) _Generic((T) {0}, _slot28_Option_T: (_slot28_Option_U) {0}, default: _slot27_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 29
+#else
+#if _slot_Option == 29
+  typedef T _slot29_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot29_Option_U;
+	#undef _slot29_Option
+  #define _slot29_Option(T) _Generic((T) {0}, _slot29_Option_T: (_slot29_Option_U) {0}, default: _slot28_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 30
+#else
+#if _slot_Option == 30
+  typedef T _slot30_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot30_Option_U;
+	#undef _slot30_Option
+  #define _slot30_Option(T) _Generic((T) {0}, _slot30_Option_T: (_slot30_Option_U) {0}, default: _slot29_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 31
+#else
+#if _slot_Option == 31
+  typedef T _slot31_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot31_Option_U;
+	#undef _slot31_Option
+  #define _slot31_Option(T) _Generic((T) {0}, _slot31_Option_T: (_slot31_Option_U) {0}, default: _slot30_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 32
+#else
+#if _slot_Option == 32
+  typedef T _slot32_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot32_Option_U;
+	#undef _slot32_Option
+  #define _slot32_Option(T) _Generic((T) {0}, _slot32_Option_T: (_slot32_Option_U) {0}, default: _slot31_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 33
+#else
+#if _slot_Option == 33
+  typedef T _slot33_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot33_Option_U;
+	#undef _slot33_Option
+  #define _slot33_Option(T) _Generic((T) {0}, _slot33_Option_T: (_slot33_Option_U) {0}, default: _slot32_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 34
+#else
+#if _slot_Option == 34
+  typedef T _slot34_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot34_Option_U;
+	#undef _slot34_Option
+  #define _slot34_Option(T) _Generic((T) {0}, _slot34_Option_T: (_slot34_Option_U) {0}, default: _slot33_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 35
+#else
+#if _slot_Option == 35
+  typedef T _slot35_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot35_Option_U;
+	#undef _slot35_Option
+  #define _slot35_Option(T) _Generic((T) {0}, _slot35_Option_T: (_slot35_Option_U) {0}, default: _slot34_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 36
+#else
+#if _slot_Option == 36
+  typedef T _slot36_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot36_Option_U;
+	#undef _slot36_Option
+  #define _slot36_Option(T) _Generic((T) {0}, _slot36_Option_T: (_slot36_Option_U) {0}, default: _slot35_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 37
+#else
+#if _slot_Option == 37
+  typedef T _slot37_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot37_Option_U;
+	#undef _slot37_Option
+  #define _slot37_Option(T) _Generic((T) {0}, _slot37_Option_T: (_slot37_Option_U) {0}, default: _slot36_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 38
+#else
+#if _slot_Option == 38
+  typedef T _slot38_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot38_Option_U;
+	#undef _slot38_Option
+  #define _slot38_Option(T) _Generic((T) {0}, _slot38_Option_T: (_slot38_Option_U) {0}, default: _slot37_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 39
+#else
+#if _slot_Option == 39
+  typedef T _slot39_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot39_Option_U;
+	#undef _slot39_Option
+  #define _slot39_Option(T) _Generic((T) {0}, _slot39_Option_T: (_slot39_Option_U) {0}, default: _slot38_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 40
+#else
+#if _slot_Option == 40
+  typedef T _slot40_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot40_Option_U;
+	#undef _slot40_Option
+  #define _slot40_Option(T) _Generic((T) {0}, _slot40_Option_T: (_slot40_Option_U) {0}, default: _slot39_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 41
+#else
+#if _slot_Option == 41
+  typedef T _slot41_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot41_Option_U;
+	#undef _slot41_Option
+  #define _slot41_Option(T) _Generic((T) {0}, _slot41_Option_T: (_slot41_Option_U) {0}, default: _slot40_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 42
+#else
+#if _slot_Option == 42
+  typedef T _slot42_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot42_Option_U;
+	#undef _slot42_Option
+  #define _slot42_Option(T) _Generic((T) {0}, _slot42_Option_T: (_slot42_Option_U) {0}, default: _slot41_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 43
+#else
+#if _slot_Option == 43
+  typedef T _slot43_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot43_Option_U;
+	#undef _slot43_Option
+  #define _slot43_Option(T) _Generic((T) {0}, _slot43_Option_T: (_slot43_Option_U) {0}, default: _slot42_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 44
+#else
+#if _slot_Option == 44
+  typedef T _slot44_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot44_Option_U;
+	#undef _slot44_Option
+  #define _slot44_Option(T) _Generic((T) {0}, _slot44_Option_T: (_slot44_Option_U) {0}, default: _slot43_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 45
+#else
+#if _slot_Option == 45
+  typedef T _slot45_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot45_Option_U;
+	#undef _slot45_Option
+  #define _slot45_Option(T) _Generic((T) {0}, _slot45_Option_T: (_slot45_Option_U) {0}, default: _slot44_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 46
+#else
+#if _slot_Option == 46
+  typedef T _slot46_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot46_Option_U;
+	#undef _slot46_Option
+  #define _slot46_Option(T) _Generic((T) {0}, _slot46_Option_T: (_slot46_Option_U) {0}, default: _slot45_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 47
+#else
+#if _slot_Option == 47
+  typedef T _slot47_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot47_Option_U;
+	#undef _slot47_Option
+  #define _slot47_Option(T) _Generic((T) {0}, _slot47_Option_T: (_slot47_Option_U) {0}, default: _slot46_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 48
+#else
+#if _slot_Option == 48
+  typedef T _slot48_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot48_Option_U;
+	#undef _slot48_Option
+  #define _slot48_Option(T) _Generic((T) {0}, _slot48_Option_T: (_slot48_Option_U) {0}, default: _slot47_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 49
+#else
+#if _slot_Option == 49
+  typedef T _slot49_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot49_Option_U;
+	#undef _slot49_Option
+  #define _slot49_Option(T) _Generic((T) {0}, _slot49_Option_T: (_slot49_Option_U) {0}, default: _slot48_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 50
+#else
+#if _slot_Option == 50
+  typedef T _slot50_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot50_Option_U;
+	#undef _slot50_Option
+  #define _slot50_Option(T) _Generic((T) {0}, _slot50_Option_T: (_slot50_Option_U) {0}, default: _slot49_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 51
+#else
+#if _slot_Option == 51
+  typedef T _slot51_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot51_Option_U;
+	#undef _slot51_Option
+  #define _slot51_Option(T) _Generic((T) {0}, _slot51_Option_T: (_slot51_Option_U) {0}, default: _slot50_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 52
+#else
+#if _slot_Option == 52
+  typedef T _slot52_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot52_Option_U;
+	#undef _slot52_Option
+  #define _slot52_Option(T) _Generic((T) {0}, _slot52_Option_T: (_slot52_Option_U) {0}, default: _slot51_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 53
+#else
+#if _slot_Option == 53
+  typedef T _slot53_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot53_Option_U;
+	#undef _slot53_Option
+  #define _slot53_Option(T) _Generic((T) {0}, _slot53_Option_T: (_slot53_Option_U) {0}, default: _slot52_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 54
+#else
+#if _slot_Option == 54
+  typedef T _slot54_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot54_Option_U;
+	#undef _slot54_Option
+  #define _slot54_Option(T) _Generic((T) {0}, _slot54_Option_T: (_slot54_Option_U) {0}, default: _slot53_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 55
+#else
+#if _slot_Option == 55
+  typedef T _slot55_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot55_Option_U;
+	#undef _slot55_Option
+  #define _slot55_Option(T) _Generic((T) {0}, _slot55_Option_T: (_slot55_Option_U) {0}, default: _slot54_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 56
+#else
+#if _slot_Option == 56
+  typedef T _slot56_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot56_Option_U;
+	#undef _slot56_Option
+  #define _slot56_Option(T) _Generic((T) {0}, _slot56_Option_T: (_slot56_Option_U) {0}, default: _slot55_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 57
+#else
+#if _slot_Option == 57
+  typedef T _slot57_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot57_Option_U;
+	#undef _slot57_Option
+  #define _slot57_Option(T) _Generic((T) {0}, _slot57_Option_T: (_slot57_Option_U) {0}, default: _slot56_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 58
+#else
+#if _slot_Option == 58
+  typedef T _slot58_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot58_Option_U;
+	#undef _slot58_Option
+  #define _slot58_Option(T) _Generic((T) {0}, _slot58_Option_T: (_slot58_Option_U) {0}, default: _slot57_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 59
+#else
+#if _slot_Option == 59
+  typedef T _slot59_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot59_Option_U;
+	#undef _slot59_Option
+  #define _slot59_Option(T) _Generic((T) {0}, _slot59_Option_T: (_slot59_Option_U) {0}, default: _slot58_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 60
+#else
+#if _slot_Option == 60
+  typedef T _slot60_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot60_Option_U;
+	#undef _slot60_Option
+  #define _slot60_Option(T) _Generic((T) {0}, _slot60_Option_T: (_slot60_Option_U) {0}, default: _slot59_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 61
+#else
+#if _slot_Option == 61
+  typedef T _slot61_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot61_Option_U;
+	#undef _slot61_Option
+  #define _slot61_Option(T) _Generic((T) {0}, _slot61_Option_T: (_slot61_Option_U) {0}, default: _slot60_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 62
+#else
+#if _slot_Option == 62
+  typedef T _slot62_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot62_Option_U;
+	#undef _slot62_Option
+  #define _slot62_Option(T) _Generic((T) {0}, _slot62_Option_T: (_slot62_Option_U) {0}, default: _slot61_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 63
+#else
+#if _slot_Option == 63
+  typedef T _slot63_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot63_Option_U;
+	#undef _slot63_Option
+  #define _slot63_Option(T) _Generic((T) {0}, _slot63_Option_T: (_slot63_Option_U) {0}, default: _slot62_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 64
+#else
+#if _slot_Option == 64
+  typedef T _slot64_Option_T;
+  typedef struct PP_CAT3(_option_, T, _containers_h) _slot64_Option_U;
+	#undef _slot64_Option
+  #define _slot64_Option(T) _Generic((T) {0}, _slot64_Option_T: (_slot64_Option_U) {0}, default: _slot63_Option(T))
+	#undef _slot_Option
+  #define _slot_Option 65
+#else
+#error "out of slots to define `Option`. 64 max."
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif

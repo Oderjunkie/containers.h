@@ -1,0 +1,967 @@
+#ifndef Some
+  #define Some(expr) _slot64_Some(expr)
+  #define _slot64_Some(expr) _slot63_Some(expr)
+  #define _slot63_Some(expr) _slot62_Some(expr)
+  #define _slot62_Some(expr) _slot61_Some(expr)
+  #define _slot61_Some(expr) _slot60_Some(expr)
+  #define _slot60_Some(expr) _slot59_Some(expr)
+  #define _slot59_Some(expr) _slot58_Some(expr)
+  #define _slot58_Some(expr) _slot57_Some(expr)
+  #define _slot57_Some(expr) _slot56_Some(expr)
+  #define _slot56_Some(expr) _slot55_Some(expr)
+  #define _slot55_Some(expr) _slot54_Some(expr)
+  #define _slot54_Some(expr) _slot53_Some(expr)
+  #define _slot53_Some(expr) _slot52_Some(expr)
+  #define _slot52_Some(expr) _slot51_Some(expr)
+  #define _slot51_Some(expr) _slot50_Some(expr)
+  #define _slot50_Some(expr) _slot49_Some(expr)
+  #define _slot49_Some(expr) _slot48_Some(expr)
+  #define _slot48_Some(expr) _slot47_Some(expr)
+  #define _slot47_Some(expr) _slot46_Some(expr)
+  #define _slot46_Some(expr) _slot45_Some(expr)
+  #define _slot45_Some(expr) _slot44_Some(expr)
+  #define _slot44_Some(expr) _slot43_Some(expr)
+  #define _slot43_Some(expr) _slot42_Some(expr)
+  #define _slot42_Some(expr) _slot41_Some(expr)
+  #define _slot41_Some(expr) _slot40_Some(expr)
+  #define _slot40_Some(expr) _slot39_Some(expr)
+  #define _slot39_Some(expr) _slot38_Some(expr)
+  #define _slot38_Some(expr) _slot37_Some(expr)
+  #define _slot37_Some(expr) _slot36_Some(expr)
+  #define _slot36_Some(expr) _slot35_Some(expr)
+  #define _slot35_Some(expr) _slot34_Some(expr)
+  #define _slot34_Some(expr) _slot33_Some(expr)
+  #define _slot33_Some(expr) _slot32_Some(expr)
+  #define _slot32_Some(expr) _slot31_Some(expr)
+  #define _slot31_Some(expr) _slot30_Some(expr)
+  #define _slot30_Some(expr) _slot29_Some(expr)
+  #define _slot29_Some(expr) _slot28_Some(expr)
+  #define _slot28_Some(expr) _slot27_Some(expr)
+  #define _slot27_Some(expr) _slot26_Some(expr)
+  #define _slot26_Some(expr) _slot25_Some(expr)
+  #define _slot25_Some(expr) _slot24_Some(expr)
+  #define _slot24_Some(expr) _slot23_Some(expr)
+  #define _slot23_Some(expr) _slot22_Some(expr)
+  #define _slot22_Some(expr) _slot21_Some(expr)
+  #define _slot21_Some(expr) _slot20_Some(expr)
+  #define _slot20_Some(expr) _slot19_Some(expr)
+  #define _slot19_Some(expr) _slot18_Some(expr)
+  #define _slot18_Some(expr) _slot17_Some(expr)
+  #define _slot17_Some(expr) _slot16_Some(expr)
+  #define _slot16_Some(expr) _slot15_Some(expr)
+  #define _slot15_Some(expr) _slot14_Some(expr)
+  #define _slot14_Some(expr) _slot13_Some(expr)
+  #define _slot13_Some(expr) _slot12_Some(expr)
+  #define _slot12_Some(expr) _slot11_Some(expr)
+  #define _slot11_Some(expr) _slot10_Some(expr)
+  #define _slot10_Some(expr) _slot9_Some(expr)
+  #define _slot9_Some(expr) _slot8_Some(expr)
+  #define _slot8_Some(expr) _slot7_Some(expr)
+  #define _slot7_Some(expr) _slot6_Some(expr)
+  #define _slot6_Some(expr) _slot5_Some(expr)
+  #define _slot5_Some(expr) _slot4_Some(expr)
+  #define _slot4_Some(expr) _slot3_Some(expr)
+  #define _slot3_Some(expr) _slot2_Some(expr)
+  #define _slot2_Some(expr) _slot1_Some(expr)
+  #define _slot1_Some(expr) _slot0_Some(expr)
+  #define _slot0_Some(expr) (expr)
+  #define _slot_Some 1
+#endif
+
+#if _slot_Some == 1
+  typedef T _slot1_Some_T;
+  static inline Option(T) _slot1_Some_f(_slot1_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot1_Some
+  #define _slot1_Some(expr) _Generic((expr), _slot1_Some_T: _slot1_Some_f(_Generic((expr), _slot1_Some_T: (expr), default: (_slot1_Some_T) {0})), default: _slot0_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 2
+#else
+#if _slot_Some == 2
+  typedef T _slot2_Some_T;
+  static inline Option(T) _slot2_Some_f(_slot2_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot2_Some
+  #define _slot2_Some(expr) _Generic((expr), _slot2_Some_T: _slot2_Some_f(_Generic((expr), _slot2_Some_T: (expr), default: (_slot2_Some_T) {0})), default: _slot1_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 3
+#else
+#if _slot_Some == 3
+  typedef T _slot3_Some_T;
+  static inline Option(T) _slot3_Some_f(_slot3_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot3_Some
+  #define _slot3_Some(expr) _Generic((expr), _slot3_Some_T: _slot3_Some_f(_Generic((expr), _slot3_Some_T: (expr), default: (_slot3_Some_T) {0})), default: _slot2_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 4
+#else
+#if _slot_Some == 4
+  typedef T _slot4_Some_T;
+  static inline Option(T) _slot4_Some_f(_slot4_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot4_Some
+  #define _slot4_Some(expr) _Generic((expr), _slot4_Some_T: _slot4_Some_f(_Generic((expr), _slot4_Some_T: (expr), default: (_slot4_Some_T) {0})), default: _slot3_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 5
+#else
+#if _slot_Some == 5
+  typedef T _slot5_Some_T;
+  static inline Option(T) _slot5_Some_f(_slot5_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot5_Some
+  #define _slot5_Some(expr) _Generic((expr), _slot5_Some_T: _slot5_Some_f(_Generic((expr), _slot5_Some_T: (expr), default: (_slot5_Some_T) {0})), default: _slot4_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 6
+#else
+#if _slot_Some == 6
+  typedef T _slot6_Some_T;
+  static inline Option(T) _slot6_Some_f(_slot6_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot6_Some
+  #define _slot6_Some(expr) _Generic((expr), _slot6_Some_T: _slot6_Some_f(_Generic((expr), _slot6_Some_T: (expr), default: (_slot6_Some_T) {0})), default: _slot5_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 7
+#else
+#if _slot_Some == 7
+  typedef T _slot7_Some_T;
+  static inline Option(T) _slot7_Some_f(_slot7_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot7_Some
+  #define _slot7_Some(expr) _Generic((expr), _slot7_Some_T: _slot7_Some_f(_Generic((expr), _slot7_Some_T: (expr), default: (_slot7_Some_T) {0})), default: _slot6_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 8
+#else
+#if _slot_Some == 8
+  typedef T _slot8_Some_T;
+  static inline Option(T) _slot8_Some_f(_slot8_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot8_Some
+  #define _slot8_Some(expr) _Generic((expr), _slot8_Some_T: _slot8_Some_f(_Generic((expr), _slot8_Some_T: (expr), default: (_slot8_Some_T) {0})), default: _slot7_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 9
+#else
+#if _slot_Some == 9
+  typedef T _slot9_Some_T;
+  static inline Option(T) _slot9_Some_f(_slot9_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot9_Some
+  #define _slot9_Some(expr) _Generic((expr), _slot9_Some_T: _slot9_Some_f(_Generic((expr), _slot9_Some_T: (expr), default: (_slot9_Some_T) {0})), default: _slot8_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 10
+#else
+#if _slot_Some == 10
+  typedef T _slot10_Some_T;
+  static inline Option(T) _slot10_Some_f(_slot10_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot10_Some
+  #define _slot10_Some(expr) _Generic((expr), _slot10_Some_T: _slot10_Some_f(_Generic((expr), _slot10_Some_T: (expr), default: (_slot10_Some_T) {0})), default: _slot9_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 11
+#else
+#if _slot_Some == 11
+  typedef T _slot11_Some_T;
+  static inline Option(T) _slot11_Some_f(_slot11_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot11_Some
+  #define _slot11_Some(expr) _Generic((expr), _slot11_Some_T: _slot11_Some_f(_Generic((expr), _slot11_Some_T: (expr), default: (_slot11_Some_T) {0})), default: _slot10_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 12
+#else
+#if _slot_Some == 12
+  typedef T _slot12_Some_T;
+  static inline Option(T) _slot12_Some_f(_slot12_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot12_Some
+  #define _slot12_Some(expr) _Generic((expr), _slot12_Some_T: _slot12_Some_f(_Generic((expr), _slot12_Some_T: (expr), default: (_slot12_Some_T) {0})), default: _slot11_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 13
+#else
+#if _slot_Some == 13
+  typedef T _slot13_Some_T;
+  static inline Option(T) _slot13_Some_f(_slot13_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot13_Some
+  #define _slot13_Some(expr) _Generic((expr), _slot13_Some_T: _slot13_Some_f(_Generic((expr), _slot13_Some_T: (expr), default: (_slot13_Some_T) {0})), default: _slot12_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 14
+#else
+#if _slot_Some == 14
+  typedef T _slot14_Some_T;
+  static inline Option(T) _slot14_Some_f(_slot14_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot14_Some
+  #define _slot14_Some(expr) _Generic((expr), _slot14_Some_T: _slot14_Some_f(_Generic((expr), _slot14_Some_T: (expr), default: (_slot14_Some_T) {0})), default: _slot13_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 15
+#else
+#if _slot_Some == 15
+  typedef T _slot15_Some_T;
+  static inline Option(T) _slot15_Some_f(_slot15_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot15_Some
+  #define _slot15_Some(expr) _Generic((expr), _slot15_Some_T: _slot15_Some_f(_Generic((expr), _slot15_Some_T: (expr), default: (_slot15_Some_T) {0})), default: _slot14_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 16
+#else
+#if _slot_Some == 16
+  typedef T _slot16_Some_T;
+  static inline Option(T) _slot16_Some_f(_slot16_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot16_Some
+  #define _slot16_Some(expr) _Generic((expr), _slot16_Some_T: _slot16_Some_f(_Generic((expr), _slot16_Some_T: (expr), default: (_slot16_Some_T) {0})), default: _slot15_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 17
+#else
+#if _slot_Some == 17
+  typedef T _slot17_Some_T;
+  static inline Option(T) _slot17_Some_f(_slot17_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot17_Some
+  #define _slot17_Some(expr) _Generic((expr), _slot17_Some_T: _slot17_Some_f(_Generic((expr), _slot17_Some_T: (expr), default: (_slot17_Some_T) {0})), default: _slot16_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 18
+#else
+#if _slot_Some == 18
+  typedef T _slot18_Some_T;
+  static inline Option(T) _slot18_Some_f(_slot18_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot18_Some
+  #define _slot18_Some(expr) _Generic((expr), _slot18_Some_T: _slot18_Some_f(_Generic((expr), _slot18_Some_T: (expr), default: (_slot18_Some_T) {0})), default: _slot17_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 19
+#else
+#if _slot_Some == 19
+  typedef T _slot19_Some_T;
+  static inline Option(T) _slot19_Some_f(_slot19_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot19_Some
+  #define _slot19_Some(expr) _Generic((expr), _slot19_Some_T: _slot19_Some_f(_Generic((expr), _slot19_Some_T: (expr), default: (_slot19_Some_T) {0})), default: _slot18_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 20
+#else
+#if _slot_Some == 20
+  typedef T _slot20_Some_T;
+  static inline Option(T) _slot20_Some_f(_slot20_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot20_Some
+  #define _slot20_Some(expr) _Generic((expr), _slot20_Some_T: _slot20_Some_f(_Generic((expr), _slot20_Some_T: (expr), default: (_slot20_Some_T) {0})), default: _slot19_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 21
+#else
+#if _slot_Some == 21
+  typedef T _slot21_Some_T;
+  static inline Option(T) _slot21_Some_f(_slot21_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot21_Some
+  #define _slot21_Some(expr) _Generic((expr), _slot21_Some_T: _slot21_Some_f(_Generic((expr), _slot21_Some_T: (expr), default: (_slot21_Some_T) {0})), default: _slot20_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 22
+#else
+#if _slot_Some == 22
+  typedef T _slot22_Some_T;
+  static inline Option(T) _slot22_Some_f(_slot22_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot22_Some
+  #define _slot22_Some(expr) _Generic((expr), _slot22_Some_T: _slot22_Some_f(_Generic((expr), _slot22_Some_T: (expr), default: (_slot22_Some_T) {0})), default: _slot21_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 23
+#else
+#if _slot_Some == 23
+  typedef T _slot23_Some_T;
+  static inline Option(T) _slot23_Some_f(_slot23_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot23_Some
+  #define _slot23_Some(expr) _Generic((expr), _slot23_Some_T: _slot23_Some_f(_Generic((expr), _slot23_Some_T: (expr), default: (_slot23_Some_T) {0})), default: _slot22_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 24
+#else
+#if _slot_Some == 24
+  typedef T _slot24_Some_T;
+  static inline Option(T) _slot24_Some_f(_slot24_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot24_Some
+  #define _slot24_Some(expr) _Generic((expr), _slot24_Some_T: _slot24_Some_f(_Generic((expr), _slot24_Some_T: (expr), default: (_slot24_Some_T) {0})), default: _slot23_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 25
+#else
+#if _slot_Some == 25
+  typedef T _slot25_Some_T;
+  static inline Option(T) _slot25_Some_f(_slot25_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot25_Some
+  #define _slot25_Some(expr) _Generic((expr), _slot25_Some_T: _slot25_Some_f(_Generic((expr), _slot25_Some_T: (expr), default: (_slot25_Some_T) {0})), default: _slot24_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 26
+#else
+#if _slot_Some == 26
+  typedef T _slot26_Some_T;
+  static inline Option(T) _slot26_Some_f(_slot26_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot26_Some
+  #define _slot26_Some(expr) _Generic((expr), _slot26_Some_T: _slot26_Some_f(_Generic((expr), _slot26_Some_T: (expr), default: (_slot26_Some_T) {0})), default: _slot25_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 27
+#else
+#if _slot_Some == 27
+  typedef T _slot27_Some_T;
+  static inline Option(T) _slot27_Some_f(_slot27_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot27_Some
+  #define _slot27_Some(expr) _Generic((expr), _slot27_Some_T: _slot27_Some_f(_Generic((expr), _slot27_Some_T: (expr), default: (_slot27_Some_T) {0})), default: _slot26_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 28
+#else
+#if _slot_Some == 28
+  typedef T _slot28_Some_T;
+  static inline Option(T) _slot28_Some_f(_slot28_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot28_Some
+  #define _slot28_Some(expr) _Generic((expr), _slot28_Some_T: _slot28_Some_f(_Generic((expr), _slot28_Some_T: (expr), default: (_slot28_Some_T) {0})), default: _slot27_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 29
+#else
+#if _slot_Some == 29
+  typedef T _slot29_Some_T;
+  static inline Option(T) _slot29_Some_f(_slot29_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot29_Some
+  #define _slot29_Some(expr) _Generic((expr), _slot29_Some_T: _slot29_Some_f(_Generic((expr), _slot29_Some_T: (expr), default: (_slot29_Some_T) {0})), default: _slot28_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 30
+#else
+#if _slot_Some == 30
+  typedef T _slot30_Some_T;
+  static inline Option(T) _slot30_Some_f(_slot30_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot30_Some
+  #define _slot30_Some(expr) _Generic((expr), _slot30_Some_T: _slot30_Some_f(_Generic((expr), _slot30_Some_T: (expr), default: (_slot30_Some_T) {0})), default: _slot29_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 31
+#else
+#if _slot_Some == 31
+  typedef T _slot31_Some_T;
+  static inline Option(T) _slot31_Some_f(_slot31_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot31_Some
+  #define _slot31_Some(expr) _Generic((expr), _slot31_Some_T: _slot31_Some_f(_Generic((expr), _slot31_Some_T: (expr), default: (_slot31_Some_T) {0})), default: _slot30_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 32
+#else
+#if _slot_Some == 32
+  typedef T _slot32_Some_T;
+  static inline Option(T) _slot32_Some_f(_slot32_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot32_Some
+  #define _slot32_Some(expr) _Generic((expr), _slot32_Some_T: _slot32_Some_f(_Generic((expr), _slot32_Some_T: (expr), default: (_slot32_Some_T) {0})), default: _slot31_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 33
+#else
+#if _slot_Some == 33
+  typedef T _slot33_Some_T;
+  static inline Option(T) _slot33_Some_f(_slot33_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot33_Some
+  #define _slot33_Some(expr) _Generic((expr), _slot33_Some_T: _slot33_Some_f(_Generic((expr), _slot33_Some_T: (expr), default: (_slot33_Some_T) {0})), default: _slot32_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 34
+#else
+#if _slot_Some == 34
+  typedef T _slot34_Some_T;
+  static inline Option(T) _slot34_Some_f(_slot34_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot34_Some
+  #define _slot34_Some(expr) _Generic((expr), _slot34_Some_T: _slot34_Some_f(_Generic((expr), _slot34_Some_T: (expr), default: (_slot34_Some_T) {0})), default: _slot33_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 35
+#else
+#if _slot_Some == 35
+  typedef T _slot35_Some_T;
+  static inline Option(T) _slot35_Some_f(_slot35_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot35_Some
+  #define _slot35_Some(expr) _Generic((expr), _slot35_Some_T: _slot35_Some_f(_Generic((expr), _slot35_Some_T: (expr), default: (_slot35_Some_T) {0})), default: _slot34_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 36
+#else
+#if _slot_Some == 36
+  typedef T _slot36_Some_T;
+  static inline Option(T) _slot36_Some_f(_slot36_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot36_Some
+  #define _slot36_Some(expr) _Generic((expr), _slot36_Some_T: _slot36_Some_f(_Generic((expr), _slot36_Some_T: (expr), default: (_slot36_Some_T) {0})), default: _slot35_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 37
+#else
+#if _slot_Some == 37
+  typedef T _slot37_Some_T;
+  static inline Option(T) _slot37_Some_f(_slot37_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot37_Some
+  #define _slot37_Some(expr) _Generic((expr), _slot37_Some_T: _slot37_Some_f(_Generic((expr), _slot37_Some_T: (expr), default: (_slot37_Some_T) {0})), default: _slot36_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 38
+#else
+#if _slot_Some == 38
+  typedef T _slot38_Some_T;
+  static inline Option(T) _slot38_Some_f(_slot38_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot38_Some
+  #define _slot38_Some(expr) _Generic((expr), _slot38_Some_T: _slot38_Some_f(_Generic((expr), _slot38_Some_T: (expr), default: (_slot38_Some_T) {0})), default: _slot37_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 39
+#else
+#if _slot_Some == 39
+  typedef T _slot39_Some_T;
+  static inline Option(T) _slot39_Some_f(_slot39_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot39_Some
+  #define _slot39_Some(expr) _Generic((expr), _slot39_Some_T: _slot39_Some_f(_Generic((expr), _slot39_Some_T: (expr), default: (_slot39_Some_T) {0})), default: _slot38_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 40
+#else
+#if _slot_Some == 40
+  typedef T _slot40_Some_T;
+  static inline Option(T) _slot40_Some_f(_slot40_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot40_Some
+  #define _slot40_Some(expr) _Generic((expr), _slot40_Some_T: _slot40_Some_f(_Generic((expr), _slot40_Some_T: (expr), default: (_slot40_Some_T) {0})), default: _slot39_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 41
+#else
+#if _slot_Some == 41
+  typedef T _slot41_Some_T;
+  static inline Option(T) _slot41_Some_f(_slot41_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot41_Some
+  #define _slot41_Some(expr) _Generic((expr), _slot41_Some_T: _slot41_Some_f(_Generic((expr), _slot41_Some_T: (expr), default: (_slot41_Some_T) {0})), default: _slot40_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 42
+#else
+#if _slot_Some == 42
+  typedef T _slot42_Some_T;
+  static inline Option(T) _slot42_Some_f(_slot42_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot42_Some
+  #define _slot42_Some(expr) _Generic((expr), _slot42_Some_T: _slot42_Some_f(_Generic((expr), _slot42_Some_T: (expr), default: (_slot42_Some_T) {0})), default: _slot41_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 43
+#else
+#if _slot_Some == 43
+  typedef T _slot43_Some_T;
+  static inline Option(T) _slot43_Some_f(_slot43_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot43_Some
+  #define _slot43_Some(expr) _Generic((expr), _slot43_Some_T: _slot43_Some_f(_Generic((expr), _slot43_Some_T: (expr), default: (_slot43_Some_T) {0})), default: _slot42_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 44
+#else
+#if _slot_Some == 44
+  typedef T _slot44_Some_T;
+  static inline Option(T) _slot44_Some_f(_slot44_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot44_Some
+  #define _slot44_Some(expr) _Generic((expr), _slot44_Some_T: _slot44_Some_f(_Generic((expr), _slot44_Some_T: (expr), default: (_slot44_Some_T) {0})), default: _slot43_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 45
+#else
+#if _slot_Some == 45
+  typedef T _slot45_Some_T;
+  static inline Option(T) _slot45_Some_f(_slot45_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot45_Some
+  #define _slot45_Some(expr) _Generic((expr), _slot45_Some_T: _slot45_Some_f(_Generic((expr), _slot45_Some_T: (expr), default: (_slot45_Some_T) {0})), default: _slot44_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 46
+#else
+#if _slot_Some == 46
+  typedef T _slot46_Some_T;
+  static inline Option(T) _slot46_Some_f(_slot46_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot46_Some
+  #define _slot46_Some(expr) _Generic((expr), _slot46_Some_T: _slot46_Some_f(_Generic((expr), _slot46_Some_T: (expr), default: (_slot46_Some_T) {0})), default: _slot45_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 47
+#else
+#if _slot_Some == 47
+  typedef T _slot47_Some_T;
+  static inline Option(T) _slot47_Some_f(_slot47_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot47_Some
+  #define _slot47_Some(expr) _Generic((expr), _slot47_Some_T: _slot47_Some_f(_Generic((expr), _slot47_Some_T: (expr), default: (_slot47_Some_T) {0})), default: _slot46_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 48
+#else
+#if _slot_Some == 48
+  typedef T _slot48_Some_T;
+  static inline Option(T) _slot48_Some_f(_slot48_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot48_Some
+  #define _slot48_Some(expr) _Generic((expr), _slot48_Some_T: _slot48_Some_f(_Generic((expr), _slot48_Some_T: (expr), default: (_slot48_Some_T) {0})), default: _slot47_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 49
+#else
+#if _slot_Some == 49
+  typedef T _slot49_Some_T;
+  static inline Option(T) _slot49_Some_f(_slot49_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot49_Some
+  #define _slot49_Some(expr) _Generic((expr), _slot49_Some_T: _slot49_Some_f(_Generic((expr), _slot49_Some_T: (expr), default: (_slot49_Some_T) {0})), default: _slot48_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 50
+#else
+#if _slot_Some == 50
+  typedef T _slot50_Some_T;
+  static inline Option(T) _slot50_Some_f(_slot50_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot50_Some
+  #define _slot50_Some(expr) _Generic((expr), _slot50_Some_T: _slot50_Some_f(_Generic((expr), _slot50_Some_T: (expr), default: (_slot50_Some_T) {0})), default: _slot49_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 51
+#else
+#if _slot_Some == 51
+  typedef T _slot51_Some_T;
+  static inline Option(T) _slot51_Some_f(_slot51_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot51_Some
+  #define _slot51_Some(expr) _Generic((expr), _slot51_Some_T: _slot51_Some_f(_Generic((expr), _slot51_Some_T: (expr), default: (_slot51_Some_T) {0})), default: _slot50_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 52
+#else
+#if _slot_Some == 52
+  typedef T _slot52_Some_T;
+  static inline Option(T) _slot52_Some_f(_slot52_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot52_Some
+  #define _slot52_Some(expr) _Generic((expr), _slot52_Some_T: _slot52_Some_f(_Generic((expr), _slot52_Some_T: (expr), default: (_slot52_Some_T) {0})), default: _slot51_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 53
+#else
+#if _slot_Some == 53
+  typedef T _slot53_Some_T;
+  static inline Option(T) _slot53_Some_f(_slot53_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot53_Some
+  #define _slot53_Some(expr) _Generic((expr), _slot53_Some_T: _slot53_Some_f(_Generic((expr), _slot53_Some_T: (expr), default: (_slot53_Some_T) {0})), default: _slot52_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 54
+#else
+#if _slot_Some == 54
+  typedef T _slot54_Some_T;
+  static inline Option(T) _slot54_Some_f(_slot54_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot54_Some
+  #define _slot54_Some(expr) _Generic((expr), _slot54_Some_T: _slot54_Some_f(_Generic((expr), _slot54_Some_T: (expr), default: (_slot54_Some_T) {0})), default: _slot53_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 55
+#else
+#if _slot_Some == 55
+  typedef T _slot55_Some_T;
+  static inline Option(T) _slot55_Some_f(_slot55_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot55_Some
+  #define _slot55_Some(expr) _Generic((expr), _slot55_Some_T: _slot55_Some_f(_Generic((expr), _slot55_Some_T: (expr), default: (_slot55_Some_T) {0})), default: _slot54_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 56
+#else
+#if _slot_Some == 56
+  typedef T _slot56_Some_T;
+  static inline Option(T) _slot56_Some_f(_slot56_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot56_Some
+  #define _slot56_Some(expr) _Generic((expr), _slot56_Some_T: _slot56_Some_f(_Generic((expr), _slot56_Some_T: (expr), default: (_slot56_Some_T) {0})), default: _slot55_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 57
+#else
+#if _slot_Some == 57
+  typedef T _slot57_Some_T;
+  static inline Option(T) _slot57_Some_f(_slot57_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot57_Some
+  #define _slot57_Some(expr) _Generic((expr), _slot57_Some_T: _slot57_Some_f(_Generic((expr), _slot57_Some_T: (expr), default: (_slot57_Some_T) {0})), default: _slot56_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 58
+#else
+#if _slot_Some == 58
+  typedef T _slot58_Some_T;
+  static inline Option(T) _slot58_Some_f(_slot58_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot58_Some
+  #define _slot58_Some(expr) _Generic((expr), _slot58_Some_T: _slot58_Some_f(_Generic((expr), _slot58_Some_T: (expr), default: (_slot58_Some_T) {0})), default: _slot57_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 59
+#else
+#if _slot_Some == 59
+  typedef T _slot59_Some_T;
+  static inline Option(T) _slot59_Some_f(_slot59_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot59_Some
+  #define _slot59_Some(expr) _Generic((expr), _slot59_Some_T: _slot59_Some_f(_Generic((expr), _slot59_Some_T: (expr), default: (_slot59_Some_T) {0})), default: _slot58_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 60
+#else
+#if _slot_Some == 60
+  typedef T _slot60_Some_T;
+  static inline Option(T) _slot60_Some_f(_slot60_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot60_Some
+  #define _slot60_Some(expr) _Generic((expr), _slot60_Some_T: _slot60_Some_f(_Generic((expr), _slot60_Some_T: (expr), default: (_slot60_Some_T) {0})), default: _slot59_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 61
+#else
+#if _slot_Some == 61
+  typedef T _slot61_Some_T;
+  static inline Option(T) _slot61_Some_f(_slot61_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot61_Some
+  #define _slot61_Some(expr) _Generic((expr), _slot61_Some_T: _slot61_Some_f(_Generic((expr), _slot61_Some_T: (expr), default: (_slot61_Some_T) {0})), default: _slot60_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 62
+#else
+#if _slot_Some == 62
+  typedef T _slot62_Some_T;
+  static inline Option(T) _slot62_Some_f(_slot62_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot62_Some
+  #define _slot62_Some(expr) _Generic((expr), _slot62_Some_T: _slot62_Some_f(_Generic((expr), _slot62_Some_T: (expr), default: (_slot62_Some_T) {0})), default: _slot61_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 63
+#else
+#if _slot_Some == 63
+  typedef T _slot63_Some_T;
+  static inline Option(T) _slot63_Some_f(_slot63_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot63_Some
+  #define _slot63_Some(expr) _Generic((expr), _slot63_Some_T: _slot63_Some_f(_Generic((expr), _slot63_Some_T: (expr), default: (_slot63_Some_T) {0})), default: _slot62_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 64
+#else
+#if _slot_Some == 64
+  typedef T _slot64_Some_T;
+  static inline Option(T) _slot64_Some_f(_slot64_Some_T t) {
+    Option(T) opt;
+    opt._is_some = 1;
+    opt._t = t;
+    return opt;
+  }
+	#undef _slot64_Some
+  #define _slot64_Some(expr) _Generic((expr), _slot64_Some_T: _slot64_Some_f(_Generic((expr), _slot64_Some_T: (expr), default: (_slot64_Some_T) {0})), default: _slot63_Some(expr))
+	#undef _slot_Some
+  #define _slot_Some 65
+#else
+#error "out of slots to define `Some`. 64 max."
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif

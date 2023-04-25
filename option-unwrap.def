@@ -1,0 +1,1034 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef unwrap
+  #define unwrap(expr) _slot64_unwrap(expr)
+  #define _slot64_unwrap(expr) _slot63_unwrap(expr)
+  #define _slot63_unwrap(expr) _slot62_unwrap(expr)
+  #define _slot62_unwrap(expr) _slot61_unwrap(expr)
+  #define _slot61_unwrap(expr) _slot60_unwrap(expr)
+  #define _slot60_unwrap(expr) _slot59_unwrap(expr)
+  #define _slot59_unwrap(expr) _slot58_unwrap(expr)
+  #define _slot58_unwrap(expr) _slot57_unwrap(expr)
+  #define _slot57_unwrap(expr) _slot56_unwrap(expr)
+  #define _slot56_unwrap(expr) _slot55_unwrap(expr)
+  #define _slot55_unwrap(expr) _slot54_unwrap(expr)
+  #define _slot54_unwrap(expr) _slot53_unwrap(expr)
+  #define _slot53_unwrap(expr) _slot52_unwrap(expr)
+  #define _slot52_unwrap(expr) _slot51_unwrap(expr)
+  #define _slot51_unwrap(expr) _slot50_unwrap(expr)
+  #define _slot50_unwrap(expr) _slot49_unwrap(expr)
+  #define _slot49_unwrap(expr) _slot48_unwrap(expr)
+  #define _slot48_unwrap(expr) _slot47_unwrap(expr)
+  #define _slot47_unwrap(expr) _slot46_unwrap(expr)
+  #define _slot46_unwrap(expr) _slot45_unwrap(expr)
+  #define _slot45_unwrap(expr) _slot44_unwrap(expr)
+  #define _slot44_unwrap(expr) _slot43_unwrap(expr)
+  #define _slot43_unwrap(expr) _slot42_unwrap(expr)
+  #define _slot42_unwrap(expr) _slot41_unwrap(expr)
+  #define _slot41_unwrap(expr) _slot40_unwrap(expr)
+  #define _slot40_unwrap(expr) _slot39_unwrap(expr)
+  #define _slot39_unwrap(expr) _slot38_unwrap(expr)
+  #define _slot38_unwrap(expr) _slot37_unwrap(expr)
+  #define _slot37_unwrap(expr) _slot36_unwrap(expr)
+  #define _slot36_unwrap(expr) _slot35_unwrap(expr)
+  #define _slot35_unwrap(expr) _slot34_unwrap(expr)
+  #define _slot34_unwrap(expr) _slot33_unwrap(expr)
+  #define _slot33_unwrap(expr) _slot32_unwrap(expr)
+  #define _slot32_unwrap(expr) _slot31_unwrap(expr)
+  #define _slot31_unwrap(expr) _slot30_unwrap(expr)
+  #define _slot30_unwrap(expr) _slot29_unwrap(expr)
+  #define _slot29_unwrap(expr) _slot28_unwrap(expr)
+  #define _slot28_unwrap(expr) _slot27_unwrap(expr)
+  #define _slot27_unwrap(expr) _slot26_unwrap(expr)
+  #define _slot26_unwrap(expr) _slot25_unwrap(expr)
+  #define _slot25_unwrap(expr) _slot24_unwrap(expr)
+  #define _slot24_unwrap(expr) _slot23_unwrap(expr)
+  #define _slot23_unwrap(expr) _slot22_unwrap(expr)
+  #define _slot22_unwrap(expr) _slot21_unwrap(expr)
+  #define _slot21_unwrap(expr) _slot20_unwrap(expr)
+  #define _slot20_unwrap(expr) _slot19_unwrap(expr)
+  #define _slot19_unwrap(expr) _slot18_unwrap(expr)
+  #define _slot18_unwrap(expr) _slot17_unwrap(expr)
+  #define _slot17_unwrap(expr) _slot16_unwrap(expr)
+  #define _slot16_unwrap(expr) _slot15_unwrap(expr)
+  #define _slot15_unwrap(expr) _slot14_unwrap(expr)
+  #define _slot14_unwrap(expr) _slot13_unwrap(expr)
+  #define _slot13_unwrap(expr) _slot12_unwrap(expr)
+  #define _slot12_unwrap(expr) _slot11_unwrap(expr)
+  #define _slot11_unwrap(expr) _slot10_unwrap(expr)
+  #define _slot10_unwrap(expr) _slot9_unwrap(expr)
+  #define _slot9_unwrap(expr) _slot8_unwrap(expr)
+  #define _slot8_unwrap(expr) _slot7_unwrap(expr)
+  #define _slot7_unwrap(expr) _slot6_unwrap(expr)
+  #define _slot6_unwrap(expr) _slot5_unwrap(expr)
+  #define _slot5_unwrap(expr) _slot4_unwrap(expr)
+  #define _slot4_unwrap(expr) _slot3_unwrap(expr)
+  #define _slot3_unwrap(expr) _slot2_unwrap(expr)
+  #define _slot2_unwrap(expr) _slot1_unwrap(expr)
+  #define _slot1_unwrap(expr) _slot0_unwrap(expr)
+  #define _slot0_unwrap(expr) ((struct { int _ : 1; }) {0})
+  #define _slot_unwrap 1
+#endif
+
+#if _slot_unwrap == 1
+  typedef Option(T) _slot1_unwrap_T;
+  static inline T _slot1_unwrap_f(_slot1_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot1_unwrap
+  #define _slot1_unwrap(expr) _Generic((expr), _slot1_unwrap_T: _slot1_unwrap_f(_Generic((expr), _slot1_unwrap_T: (expr), default: (_slot1_unwrap_T) {0})), default: _slot0_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 2
+#else
+#if _slot_unwrap == 2
+  typedef Option(T) _slot2_unwrap_T;
+  static inline T _slot2_unwrap_f(_slot2_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot2_unwrap
+  #define _slot2_unwrap(expr) _Generic((expr), _slot2_unwrap_T: _slot2_unwrap_f(_Generic((expr), _slot2_unwrap_T: (expr), default: (_slot2_unwrap_T) {0})), default: _slot1_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 3
+#else
+#if _slot_unwrap == 3
+  typedef Option(T) _slot3_unwrap_T;
+  static inline T _slot3_unwrap_f(_slot3_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot3_unwrap
+  #define _slot3_unwrap(expr) _Generic((expr), _slot3_unwrap_T: _slot3_unwrap_f(_Generic((expr), _slot3_unwrap_T: (expr), default: (_slot3_unwrap_T) {0})), default: _slot2_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 4
+#else
+#if _slot_unwrap == 4
+  typedef Option(T) _slot4_unwrap_T;
+  static inline T _slot4_unwrap_f(_slot4_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot4_unwrap
+  #define _slot4_unwrap(expr) _Generic((expr), _slot4_unwrap_T: _slot4_unwrap_f(_Generic((expr), _slot4_unwrap_T: (expr), default: (_slot4_unwrap_T) {0})), default: _slot3_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 5
+#else
+#if _slot_unwrap == 5
+  typedef Option(T) _slot5_unwrap_T;
+  static inline T _slot5_unwrap_f(_slot5_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot5_unwrap
+  #define _slot5_unwrap(expr) _Generic((expr), _slot5_unwrap_T: _slot5_unwrap_f(_Generic((expr), _slot5_unwrap_T: (expr), default: (_slot5_unwrap_T) {0})), default: _slot4_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 6
+#else
+#if _slot_unwrap == 6
+  typedef Option(T) _slot6_unwrap_T;
+  static inline T _slot6_unwrap_f(_slot6_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot6_unwrap
+  #define _slot6_unwrap(expr) _Generic((expr), _slot6_unwrap_T: _slot6_unwrap_f(_Generic((expr), _slot6_unwrap_T: (expr), default: (_slot6_unwrap_T) {0})), default: _slot5_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 7
+#else
+#if _slot_unwrap == 7
+  typedef Option(T) _slot7_unwrap_T;
+  static inline T _slot7_unwrap_f(_slot7_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot7_unwrap
+  #define _slot7_unwrap(expr) _Generic((expr), _slot7_unwrap_T: _slot7_unwrap_f(_Generic((expr), _slot7_unwrap_T: (expr), default: (_slot7_unwrap_T) {0})), default: _slot6_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 8
+#else
+#if _slot_unwrap == 8
+  typedef Option(T) _slot8_unwrap_T;
+  static inline T _slot8_unwrap_f(_slot8_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot8_unwrap
+  #define _slot8_unwrap(expr) _Generic((expr), _slot8_unwrap_T: _slot8_unwrap_f(_Generic((expr), _slot8_unwrap_T: (expr), default: (_slot8_unwrap_T) {0})), default: _slot7_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 9
+#else
+#if _slot_unwrap == 9
+  typedef Option(T) _slot9_unwrap_T;
+  static inline T _slot9_unwrap_f(_slot9_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot9_unwrap
+  #define _slot9_unwrap(expr) _Generic((expr), _slot9_unwrap_T: _slot9_unwrap_f(_Generic((expr), _slot9_unwrap_T: (expr), default: (_slot9_unwrap_T) {0})), default: _slot8_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 10
+#else
+#if _slot_unwrap == 10
+  typedef Option(T) _slot10_unwrap_T;
+  static inline T _slot10_unwrap_f(_slot10_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot10_unwrap
+  #define _slot10_unwrap(expr) _Generic((expr), _slot10_unwrap_T: _slot10_unwrap_f(_Generic((expr), _slot10_unwrap_T: (expr), default: (_slot10_unwrap_T) {0})), default: _slot9_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 11
+#else
+#if _slot_unwrap == 11
+  typedef Option(T) _slot11_unwrap_T;
+  static inline T _slot11_unwrap_f(_slot11_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot11_unwrap
+  #define _slot11_unwrap(expr) _Generic((expr), _slot11_unwrap_T: _slot11_unwrap_f(_Generic((expr), _slot11_unwrap_T: (expr), default: (_slot11_unwrap_T) {0})), default: _slot10_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 12
+#else
+#if _slot_unwrap == 12
+  typedef Option(T) _slot12_unwrap_T;
+  static inline T _slot12_unwrap_f(_slot12_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot12_unwrap
+  #define _slot12_unwrap(expr) _Generic((expr), _slot12_unwrap_T: _slot12_unwrap_f(_Generic((expr), _slot12_unwrap_T: (expr), default: (_slot12_unwrap_T) {0})), default: _slot11_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 13
+#else
+#if _slot_unwrap == 13
+  typedef Option(T) _slot13_unwrap_T;
+  static inline T _slot13_unwrap_f(_slot13_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot13_unwrap
+  #define _slot13_unwrap(expr) _Generic((expr), _slot13_unwrap_T: _slot13_unwrap_f(_Generic((expr), _slot13_unwrap_T: (expr), default: (_slot13_unwrap_T) {0})), default: _slot12_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 14
+#else
+#if _slot_unwrap == 14
+  typedef Option(T) _slot14_unwrap_T;
+  static inline T _slot14_unwrap_f(_slot14_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot14_unwrap
+  #define _slot14_unwrap(expr) _Generic((expr), _slot14_unwrap_T: _slot14_unwrap_f(_Generic((expr), _slot14_unwrap_T: (expr), default: (_slot14_unwrap_T) {0})), default: _slot13_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 15
+#else
+#if _slot_unwrap == 15
+  typedef Option(T) _slot15_unwrap_T;
+  static inline T _slot15_unwrap_f(_slot15_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot15_unwrap
+  #define _slot15_unwrap(expr) _Generic((expr), _slot15_unwrap_T: _slot15_unwrap_f(_Generic((expr), _slot15_unwrap_T: (expr), default: (_slot15_unwrap_T) {0})), default: _slot14_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 16
+#else
+#if _slot_unwrap == 16
+  typedef Option(T) _slot16_unwrap_T;
+  static inline T _slot16_unwrap_f(_slot16_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot16_unwrap
+  #define _slot16_unwrap(expr) _Generic((expr), _slot16_unwrap_T: _slot16_unwrap_f(_Generic((expr), _slot16_unwrap_T: (expr), default: (_slot16_unwrap_T) {0})), default: _slot15_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 17
+#else
+#if _slot_unwrap == 17
+  typedef Option(T) _slot17_unwrap_T;
+  static inline T _slot17_unwrap_f(_slot17_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot17_unwrap
+  #define _slot17_unwrap(expr) _Generic((expr), _slot17_unwrap_T: _slot17_unwrap_f(_Generic((expr), _slot17_unwrap_T: (expr), default: (_slot17_unwrap_T) {0})), default: _slot16_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 18
+#else
+#if _slot_unwrap == 18
+  typedef Option(T) _slot18_unwrap_T;
+  static inline T _slot18_unwrap_f(_slot18_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot18_unwrap
+  #define _slot18_unwrap(expr) _Generic((expr), _slot18_unwrap_T: _slot18_unwrap_f(_Generic((expr), _slot18_unwrap_T: (expr), default: (_slot18_unwrap_T) {0})), default: _slot17_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 19
+#else
+#if _slot_unwrap == 19
+  typedef Option(T) _slot19_unwrap_T;
+  static inline T _slot19_unwrap_f(_slot19_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot19_unwrap
+  #define _slot19_unwrap(expr) _Generic((expr), _slot19_unwrap_T: _slot19_unwrap_f(_Generic((expr), _slot19_unwrap_T: (expr), default: (_slot19_unwrap_T) {0})), default: _slot18_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 20
+#else
+#if _slot_unwrap == 20
+  typedef Option(T) _slot20_unwrap_T;
+  static inline T _slot20_unwrap_f(_slot20_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot20_unwrap
+  #define _slot20_unwrap(expr) _Generic((expr), _slot20_unwrap_T: _slot20_unwrap_f(_Generic((expr), _slot20_unwrap_T: (expr), default: (_slot20_unwrap_T) {0})), default: _slot19_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 21
+#else
+#if _slot_unwrap == 21
+  typedef Option(T) _slot21_unwrap_T;
+  static inline T _slot21_unwrap_f(_slot21_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot21_unwrap
+  #define _slot21_unwrap(expr) _Generic((expr), _slot21_unwrap_T: _slot21_unwrap_f(_Generic((expr), _slot21_unwrap_T: (expr), default: (_slot21_unwrap_T) {0})), default: _slot20_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 22
+#else
+#if _slot_unwrap == 22
+  typedef Option(T) _slot22_unwrap_T;
+  static inline T _slot22_unwrap_f(_slot22_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot22_unwrap
+  #define _slot22_unwrap(expr) _Generic((expr), _slot22_unwrap_T: _slot22_unwrap_f(_Generic((expr), _slot22_unwrap_T: (expr), default: (_slot22_unwrap_T) {0})), default: _slot21_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 23
+#else
+#if _slot_unwrap == 23
+  typedef Option(T) _slot23_unwrap_T;
+  static inline T _slot23_unwrap_f(_slot23_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot23_unwrap
+  #define _slot23_unwrap(expr) _Generic((expr), _slot23_unwrap_T: _slot23_unwrap_f(_Generic((expr), _slot23_unwrap_T: (expr), default: (_slot23_unwrap_T) {0})), default: _slot22_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 24
+#else
+#if _slot_unwrap == 24
+  typedef Option(T) _slot24_unwrap_T;
+  static inline T _slot24_unwrap_f(_slot24_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot24_unwrap
+  #define _slot24_unwrap(expr) _Generic((expr), _slot24_unwrap_T: _slot24_unwrap_f(_Generic((expr), _slot24_unwrap_T: (expr), default: (_slot24_unwrap_T) {0})), default: _slot23_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 25
+#else
+#if _slot_unwrap == 25
+  typedef Option(T) _slot25_unwrap_T;
+  static inline T _slot25_unwrap_f(_slot25_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot25_unwrap
+  #define _slot25_unwrap(expr) _Generic((expr), _slot25_unwrap_T: _slot25_unwrap_f(_Generic((expr), _slot25_unwrap_T: (expr), default: (_slot25_unwrap_T) {0})), default: _slot24_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 26
+#else
+#if _slot_unwrap == 26
+  typedef Option(T) _slot26_unwrap_T;
+  static inline T _slot26_unwrap_f(_slot26_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot26_unwrap
+  #define _slot26_unwrap(expr) _Generic((expr), _slot26_unwrap_T: _slot26_unwrap_f(_Generic((expr), _slot26_unwrap_T: (expr), default: (_slot26_unwrap_T) {0})), default: _slot25_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 27
+#else
+#if _slot_unwrap == 27
+  typedef Option(T) _slot27_unwrap_T;
+  static inline T _slot27_unwrap_f(_slot27_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot27_unwrap
+  #define _slot27_unwrap(expr) _Generic((expr), _slot27_unwrap_T: _slot27_unwrap_f(_Generic((expr), _slot27_unwrap_T: (expr), default: (_slot27_unwrap_T) {0})), default: _slot26_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 28
+#else
+#if _slot_unwrap == 28
+  typedef Option(T) _slot28_unwrap_T;
+  static inline T _slot28_unwrap_f(_slot28_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot28_unwrap
+  #define _slot28_unwrap(expr) _Generic((expr), _slot28_unwrap_T: _slot28_unwrap_f(_Generic((expr), _slot28_unwrap_T: (expr), default: (_slot28_unwrap_T) {0})), default: _slot27_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 29
+#else
+#if _slot_unwrap == 29
+  typedef Option(T) _slot29_unwrap_T;
+  static inline T _slot29_unwrap_f(_slot29_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot29_unwrap
+  #define _slot29_unwrap(expr) _Generic((expr), _slot29_unwrap_T: _slot29_unwrap_f(_Generic((expr), _slot29_unwrap_T: (expr), default: (_slot29_unwrap_T) {0})), default: _slot28_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 30
+#else
+#if _slot_unwrap == 30
+  typedef Option(T) _slot30_unwrap_T;
+  static inline T _slot30_unwrap_f(_slot30_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot30_unwrap
+  #define _slot30_unwrap(expr) _Generic((expr), _slot30_unwrap_T: _slot30_unwrap_f(_Generic((expr), _slot30_unwrap_T: (expr), default: (_slot30_unwrap_T) {0})), default: _slot29_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 31
+#else
+#if _slot_unwrap == 31
+  typedef Option(T) _slot31_unwrap_T;
+  static inline T _slot31_unwrap_f(_slot31_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot31_unwrap
+  #define _slot31_unwrap(expr) _Generic((expr), _slot31_unwrap_T: _slot31_unwrap_f(_Generic((expr), _slot31_unwrap_T: (expr), default: (_slot31_unwrap_T) {0})), default: _slot30_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 32
+#else
+#if _slot_unwrap == 32
+  typedef Option(T) _slot32_unwrap_T;
+  static inline T _slot32_unwrap_f(_slot32_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot32_unwrap
+  #define _slot32_unwrap(expr) _Generic((expr), _slot32_unwrap_T: _slot32_unwrap_f(_Generic((expr), _slot32_unwrap_T: (expr), default: (_slot32_unwrap_T) {0})), default: _slot31_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 33
+#else
+#if _slot_unwrap == 33
+  typedef Option(T) _slot33_unwrap_T;
+  static inline T _slot33_unwrap_f(_slot33_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot33_unwrap
+  #define _slot33_unwrap(expr) _Generic((expr), _slot33_unwrap_T: _slot33_unwrap_f(_Generic((expr), _slot33_unwrap_T: (expr), default: (_slot33_unwrap_T) {0})), default: _slot32_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 34
+#else
+#if _slot_unwrap == 34
+  typedef Option(T) _slot34_unwrap_T;
+  static inline T _slot34_unwrap_f(_slot34_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot34_unwrap
+  #define _slot34_unwrap(expr) _Generic((expr), _slot34_unwrap_T: _slot34_unwrap_f(_Generic((expr), _slot34_unwrap_T: (expr), default: (_slot34_unwrap_T) {0})), default: _slot33_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 35
+#else
+#if _slot_unwrap == 35
+  typedef Option(T) _slot35_unwrap_T;
+  static inline T _slot35_unwrap_f(_slot35_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot35_unwrap
+  #define _slot35_unwrap(expr) _Generic((expr), _slot35_unwrap_T: _slot35_unwrap_f(_Generic((expr), _slot35_unwrap_T: (expr), default: (_slot35_unwrap_T) {0})), default: _slot34_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 36
+#else
+#if _slot_unwrap == 36
+  typedef Option(T) _slot36_unwrap_T;
+  static inline T _slot36_unwrap_f(_slot36_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot36_unwrap
+  #define _slot36_unwrap(expr) _Generic((expr), _slot36_unwrap_T: _slot36_unwrap_f(_Generic((expr), _slot36_unwrap_T: (expr), default: (_slot36_unwrap_T) {0})), default: _slot35_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 37
+#else
+#if _slot_unwrap == 37
+  typedef Option(T) _slot37_unwrap_T;
+  static inline T _slot37_unwrap_f(_slot37_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot37_unwrap
+  #define _slot37_unwrap(expr) _Generic((expr), _slot37_unwrap_T: _slot37_unwrap_f(_Generic((expr), _slot37_unwrap_T: (expr), default: (_slot37_unwrap_T) {0})), default: _slot36_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 38
+#else
+#if _slot_unwrap == 38
+  typedef Option(T) _slot38_unwrap_T;
+  static inline T _slot38_unwrap_f(_slot38_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot38_unwrap
+  #define _slot38_unwrap(expr) _Generic((expr), _slot38_unwrap_T: _slot38_unwrap_f(_Generic((expr), _slot38_unwrap_T: (expr), default: (_slot38_unwrap_T) {0})), default: _slot37_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 39
+#else
+#if _slot_unwrap == 39
+  typedef Option(T) _slot39_unwrap_T;
+  static inline T _slot39_unwrap_f(_slot39_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot39_unwrap
+  #define _slot39_unwrap(expr) _Generic((expr), _slot39_unwrap_T: _slot39_unwrap_f(_Generic((expr), _slot39_unwrap_T: (expr), default: (_slot39_unwrap_T) {0})), default: _slot38_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 40
+#else
+#if _slot_unwrap == 40
+  typedef Option(T) _slot40_unwrap_T;
+  static inline T _slot40_unwrap_f(_slot40_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot40_unwrap
+  #define _slot40_unwrap(expr) _Generic((expr), _slot40_unwrap_T: _slot40_unwrap_f(_Generic((expr), _slot40_unwrap_T: (expr), default: (_slot40_unwrap_T) {0})), default: _slot39_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 41
+#else
+#if _slot_unwrap == 41
+  typedef Option(T) _slot41_unwrap_T;
+  static inline T _slot41_unwrap_f(_slot41_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot41_unwrap
+  #define _slot41_unwrap(expr) _Generic((expr), _slot41_unwrap_T: _slot41_unwrap_f(_Generic((expr), _slot41_unwrap_T: (expr), default: (_slot41_unwrap_T) {0})), default: _slot40_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 42
+#else
+#if _slot_unwrap == 42
+  typedef Option(T) _slot42_unwrap_T;
+  static inline T _slot42_unwrap_f(_slot42_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot42_unwrap
+  #define _slot42_unwrap(expr) _Generic((expr), _slot42_unwrap_T: _slot42_unwrap_f(_Generic((expr), _slot42_unwrap_T: (expr), default: (_slot42_unwrap_T) {0})), default: _slot41_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 43
+#else
+#if _slot_unwrap == 43
+  typedef Option(T) _slot43_unwrap_T;
+  static inline T _slot43_unwrap_f(_slot43_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot43_unwrap
+  #define _slot43_unwrap(expr) _Generic((expr), _slot43_unwrap_T: _slot43_unwrap_f(_Generic((expr), _slot43_unwrap_T: (expr), default: (_slot43_unwrap_T) {0})), default: _slot42_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 44
+#else
+#if _slot_unwrap == 44
+  typedef Option(T) _slot44_unwrap_T;
+  static inline T _slot44_unwrap_f(_slot44_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot44_unwrap
+  #define _slot44_unwrap(expr) _Generic((expr), _slot44_unwrap_T: _slot44_unwrap_f(_Generic((expr), _slot44_unwrap_T: (expr), default: (_slot44_unwrap_T) {0})), default: _slot43_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 45
+#else
+#if _slot_unwrap == 45
+  typedef Option(T) _slot45_unwrap_T;
+  static inline T _slot45_unwrap_f(_slot45_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot45_unwrap
+  #define _slot45_unwrap(expr) _Generic((expr), _slot45_unwrap_T: _slot45_unwrap_f(_Generic((expr), _slot45_unwrap_T: (expr), default: (_slot45_unwrap_T) {0})), default: _slot44_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 46
+#else
+#if _slot_unwrap == 46
+  typedef Option(T) _slot46_unwrap_T;
+  static inline T _slot46_unwrap_f(_slot46_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot46_unwrap
+  #define _slot46_unwrap(expr) _Generic((expr), _slot46_unwrap_T: _slot46_unwrap_f(_Generic((expr), _slot46_unwrap_T: (expr), default: (_slot46_unwrap_T) {0})), default: _slot45_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 47
+#else
+#if _slot_unwrap == 47
+  typedef Option(T) _slot47_unwrap_T;
+  static inline T _slot47_unwrap_f(_slot47_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot47_unwrap
+  #define _slot47_unwrap(expr) _Generic((expr), _slot47_unwrap_T: _slot47_unwrap_f(_Generic((expr), _slot47_unwrap_T: (expr), default: (_slot47_unwrap_T) {0})), default: _slot46_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 48
+#else
+#if _slot_unwrap == 48
+  typedef Option(T) _slot48_unwrap_T;
+  static inline T _slot48_unwrap_f(_slot48_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot48_unwrap
+  #define _slot48_unwrap(expr) _Generic((expr), _slot48_unwrap_T: _slot48_unwrap_f(_Generic((expr), _slot48_unwrap_T: (expr), default: (_slot48_unwrap_T) {0})), default: _slot47_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 49
+#else
+#if _slot_unwrap == 49
+  typedef Option(T) _slot49_unwrap_T;
+  static inline T _slot49_unwrap_f(_slot49_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot49_unwrap
+  #define _slot49_unwrap(expr) _Generic((expr), _slot49_unwrap_T: _slot49_unwrap_f(_Generic((expr), _slot49_unwrap_T: (expr), default: (_slot49_unwrap_T) {0})), default: _slot48_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 50
+#else
+#if _slot_unwrap == 50
+  typedef Option(T) _slot50_unwrap_T;
+  static inline T _slot50_unwrap_f(_slot50_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot50_unwrap
+  #define _slot50_unwrap(expr) _Generic((expr), _slot50_unwrap_T: _slot50_unwrap_f(_Generic((expr), _slot50_unwrap_T: (expr), default: (_slot50_unwrap_T) {0})), default: _slot49_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 51
+#else
+#if _slot_unwrap == 51
+  typedef Option(T) _slot51_unwrap_T;
+  static inline T _slot51_unwrap_f(_slot51_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot51_unwrap
+  #define _slot51_unwrap(expr) _Generic((expr), _slot51_unwrap_T: _slot51_unwrap_f(_Generic((expr), _slot51_unwrap_T: (expr), default: (_slot51_unwrap_T) {0})), default: _slot50_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 52
+#else
+#if _slot_unwrap == 52
+  typedef Option(T) _slot52_unwrap_T;
+  static inline T _slot52_unwrap_f(_slot52_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot52_unwrap
+  #define _slot52_unwrap(expr) _Generic((expr), _slot52_unwrap_T: _slot52_unwrap_f(_Generic((expr), _slot52_unwrap_T: (expr), default: (_slot52_unwrap_T) {0})), default: _slot51_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 53
+#else
+#if _slot_unwrap == 53
+  typedef Option(T) _slot53_unwrap_T;
+  static inline T _slot53_unwrap_f(_slot53_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot53_unwrap
+  #define _slot53_unwrap(expr) _Generic((expr), _slot53_unwrap_T: _slot53_unwrap_f(_Generic((expr), _slot53_unwrap_T: (expr), default: (_slot53_unwrap_T) {0})), default: _slot52_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 54
+#else
+#if _slot_unwrap == 54
+  typedef Option(T) _slot54_unwrap_T;
+  static inline T _slot54_unwrap_f(_slot54_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot54_unwrap
+  #define _slot54_unwrap(expr) _Generic((expr), _slot54_unwrap_T: _slot54_unwrap_f(_Generic((expr), _slot54_unwrap_T: (expr), default: (_slot54_unwrap_T) {0})), default: _slot53_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 55
+#else
+#if _slot_unwrap == 55
+  typedef Option(T) _slot55_unwrap_T;
+  static inline T _slot55_unwrap_f(_slot55_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot55_unwrap
+  #define _slot55_unwrap(expr) _Generic((expr), _slot55_unwrap_T: _slot55_unwrap_f(_Generic((expr), _slot55_unwrap_T: (expr), default: (_slot55_unwrap_T) {0})), default: _slot54_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 56
+#else
+#if _slot_unwrap == 56
+  typedef Option(T) _slot56_unwrap_T;
+  static inline T _slot56_unwrap_f(_slot56_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot56_unwrap
+  #define _slot56_unwrap(expr) _Generic((expr), _slot56_unwrap_T: _slot56_unwrap_f(_Generic((expr), _slot56_unwrap_T: (expr), default: (_slot56_unwrap_T) {0})), default: _slot55_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 57
+#else
+#if _slot_unwrap == 57
+  typedef Option(T) _slot57_unwrap_T;
+  static inline T _slot57_unwrap_f(_slot57_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot57_unwrap
+  #define _slot57_unwrap(expr) _Generic((expr), _slot57_unwrap_T: _slot57_unwrap_f(_Generic((expr), _slot57_unwrap_T: (expr), default: (_slot57_unwrap_T) {0})), default: _slot56_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 58
+#else
+#if _slot_unwrap == 58
+  typedef Option(T) _slot58_unwrap_T;
+  static inline T _slot58_unwrap_f(_slot58_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot58_unwrap
+  #define _slot58_unwrap(expr) _Generic((expr), _slot58_unwrap_T: _slot58_unwrap_f(_Generic((expr), _slot58_unwrap_T: (expr), default: (_slot58_unwrap_T) {0})), default: _slot57_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 59
+#else
+#if _slot_unwrap == 59
+  typedef Option(T) _slot59_unwrap_T;
+  static inline T _slot59_unwrap_f(_slot59_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot59_unwrap
+  #define _slot59_unwrap(expr) _Generic((expr), _slot59_unwrap_T: _slot59_unwrap_f(_Generic((expr), _slot59_unwrap_T: (expr), default: (_slot59_unwrap_T) {0})), default: _slot58_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 60
+#else
+#if _slot_unwrap == 60
+  typedef Option(T) _slot60_unwrap_T;
+  static inline T _slot60_unwrap_f(_slot60_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot60_unwrap
+  #define _slot60_unwrap(expr) _Generic((expr), _slot60_unwrap_T: _slot60_unwrap_f(_Generic((expr), _slot60_unwrap_T: (expr), default: (_slot60_unwrap_T) {0})), default: _slot59_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 61
+#else
+#if _slot_unwrap == 61
+  typedef Option(T) _slot61_unwrap_T;
+  static inline T _slot61_unwrap_f(_slot61_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot61_unwrap
+  #define _slot61_unwrap(expr) _Generic((expr), _slot61_unwrap_T: _slot61_unwrap_f(_Generic((expr), _slot61_unwrap_T: (expr), default: (_slot61_unwrap_T) {0})), default: _slot60_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 62
+#else
+#if _slot_unwrap == 62
+  typedef Option(T) _slot62_unwrap_T;
+  static inline T _slot62_unwrap_f(_slot62_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot62_unwrap
+  #define _slot62_unwrap(expr) _Generic((expr), _slot62_unwrap_T: _slot62_unwrap_f(_Generic((expr), _slot62_unwrap_T: (expr), default: (_slot62_unwrap_T) {0})), default: _slot61_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 63
+#else
+#if _slot_unwrap == 63
+  typedef Option(T) _slot63_unwrap_T;
+  static inline T _slot63_unwrap_f(_slot63_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot63_unwrap
+  #define _slot63_unwrap(expr) _Generic((expr), _slot63_unwrap_T: _slot63_unwrap_f(_Generic((expr), _slot63_unwrap_T: (expr), default: (_slot63_unwrap_T) {0})), default: _slot62_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 64
+#else
+#if _slot_unwrap == 64
+  typedef Option(T) _slot64_unwrap_T;
+  static inline T _slot64_unwrap_f(_slot64_unwrap_T opt) {
+  	if (!opt._is_some) {
+    	fprintf(stderr, "\x1b[31merror: attempted to `unwrap(None(T))`\x1b[0m\n");
+      exit(EXIT_FAILURE);
+    }
+    return opt._t;
+  }
+	#undef _slot64_unwrap
+  #define _slot64_unwrap(expr) _Generic((expr), _slot64_unwrap_T: _slot64_unwrap_f(_Generic((expr), _slot64_unwrap_T: (expr), default: (_slot64_unwrap_T) {0})), default: _slot63_unwrap(expr))
+	#undef _slot_unwrap
+  #define _slot_unwrap 65
+#else
+#error "out of slots to define `unwrap`. 64 max."
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif

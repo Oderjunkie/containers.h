@@ -1,0 +1,32 @@
+#ifndef T
+  #error "T wasn't defined when option.def was included. did you forget a #define?"
+#endif
+
+#ifndef Option
+  #ifdef PP_CAT3
+    #undef PP_CAT3
+  #endif
+  #define PP_CAT3(x, y, z) PP_PASTE3(x, y, z)
+  #ifdef PP_PASTE3
+    #undef PP_PASTE3
+  #endif
+  #define PP_PASTE3(x, y, z) x##y##z
+  #ifndef __GNUC__
+    #define Option(T) struct PP_CAT3(_option_, T, _containers_h)
+  #endif
+#endif
+
+#ifdef __GNUC__
+  #include "option-option.def"
+#endif
+
+struct PP_CAT3(_option_, T, _containers_h) { int _is_some; T _t; };
+
+#include "option-some.def"
+#include "option-unwrap.def"
+
+#ifndef None
+  #define None(T) ((Option(T)) { ._is_some = 0, ._t = (T) { 0 } })
+#endif
+
+#undef T
