@@ -54,4 +54,6 @@ dkms.conf
 .ccls-cache/
 Makefile
 .replit
-.replit.nix
+replit.nix
+main
+main.c
